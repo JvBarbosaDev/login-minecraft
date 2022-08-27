@@ -7,112 +7,95 @@
 
 body {
     background: green;
-    min-width: 100vh;
+    background-image: url(../img/banner-minecraft.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     user-select: none;
 }
 
-.container {
+main .wrapper {
+    flex-wrap: wrap;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
     position: relative;
-    background-image: url(/img/banner-minecraft.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
+    background: #18b561bf;
+    border: 1px solid black;
+    font-size: 1rem;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+}
+
+button:hover {
+    background: #18b56198;
+}
+
+.coluna-geral {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    display: flex;   
     width: 100%;
     height: 100vh;
 }
 
-.form {
-    transform: translate(-50%, -50%);
-    background: #2b2b2b;
-    position: absolute;
-    color: #fff;
-    border-radius: 5px;
+.painel-login {
+    position: relative;
+    background: #333333;
+    border-radius: 4px;
     width: 400px;
-    height: 400px;
-    top: 50%;
-    left: 50%;
-    padding: 10px;
+    height: 375px;
+    padding: 48px;
 }
 
-.form input {    
-    border: 1px solid #161616;
+.painel-login span {
+    font-size: 0.6rem;
+}
+
+.painel-login b {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+}
+
+.painel-login p {
+    font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
-    background: #161616;
-    position: relative;
-    border-radius: 5px;
-    color: #fff;
+    font-weight: 500;
     display: flex;
-    width: 325px;
-    height: 27px;
-    top: 65px;
-    left: 25px;
-    padding: 5px;
+    font-size: 0.7rem;
 }
 
-.form span {
-    position: relative;
-    color: #fff;
-    font-size: 12px;
-    top: 15px;
-    left: 25px;
+.painel-login h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: flex;
 }
 
-.form button {
-    position: absolute;
-    border: 1px solid #000;
-    background: #168B4C;
-    font-size: 18px;
-    color: #fff;
-    width: 325px;
-    height: 45px;
-    bottom: 125px;
-    left: 35px;
-    cursor: pointer;
-}
-
-.form button:hover {
-    background: #168b4dbf;
-}
-
-.form input:hover {
-    border: 1px solid #161616;
-}
-
-.form p strong {
+.input-form {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: 800;
+    background: #121212;
+    border-radius: 4px;
     color: #fff;
-    top: 175px;
-    left: 85px;
+    border: none;
+    width: 300px;
+    height: 25px;
 }
 
-.form h3 {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    color: #fff;
-    top: 205px;
-    left: 113px;
-}
-
-.form img {
+.logo {
     position: absolute;
-    margin-top: -40px;
-    left: 55px;
-    vertical-align: middle;
-}
-
-.check {
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    transform:translate(-50%, -50%);
-    font-size: 12px;
-    color: #fff;
-    top: 50%;
-    left: 43.5%;
+    top: -1.6rem;
 }
